@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    background-color: #131313;
+  }
+  .navbar {
+    background: #131313;
+    height: 80px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  h1{
+    color: white;
+    margin-right: 400px;
+    
+  }
+  .navbar__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  #navbar__logo {
+    background-color: #006eff;
+    background-image: linear-gradient(to top, #67a4f4 0%, #006eff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .sidebar{
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #131313;
+  }
+  .sidebar ul button{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 160px;
+    font-size: 25px;
+    color: white;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-bottom: 1px solid white;
+    transition: .3s;
+  }
+  ul li:hover button{
+    padding-left: 40px;
+    background-color: cornflowerblue;
+  }
+  .sidebar ul button i{
+    margin-right: 10px;
+  }
+  .container{
+    position: relative;
+    margin-left: 250px;
+    width: 1270px; 
+    height: 628px;
+    background-color: white;
+    border: 3px solid gray;
+  }
+  #videoElement{
+    margin-left: 250px;
+    width: 1270px; 
+    height: 628px;
+    background-color: white;
+    border: 3px solid gray;
+  }
+  .container2{
+    position: absolute;
+    top: 95%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container2 .toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 50px;
+    background-color: cornflowerblue;
+    border-radius: 30px;
+    transition: 0.2s;
+  }
+  .container2 .toggle .toggle-button{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+
+  }
+  .container2 .text{
+    position: absolute;
+    left: 95px;
+    font-size: 25px;
+    margin-left: 10px;
+    color: white;
+  }
+  .container2 .toggle.active{
+    background: #444;
+
+  }
+  .container2 .toggle.active .toggle-button{
+    left: 45px;
+  }
+  .div1{
+    display: none;
+    position: absolute;
+    top: 80px;
+    margin-left: 250px;
+    width: 1270px; 
+    height: 628px;
+    background-color: yellow;
+    border: 3px solid gray;
+  }
+  .div2{
+    position: absolute;
+    display: none;
+    top: 80px;
+    margin-left: 250px;
+    width: 1270px; 
+    height: 628px;
+    background-color: pink;
+    border: 3px solid gray;
+  }
+  .div3{
+    position: absolute;
+    display: none;
+    top: 80px;
+    margin-left: 250px;
+    width: 1270px; 
+    height: 628px;
+    background-color: green;
+    border: 3px solid gray;
+  }
+.div1 ul {
+  color: white;
+}
+.div2 ul{
+  color: white;
+  font-size: 2rem;
+}

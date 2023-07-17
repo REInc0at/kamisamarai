@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body{
+    height: 100vh;  
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    background-color: #ffffff;    
+}   
+.container{
+    position: relative;
+    max-width: 430px;   
+    width: 100%;
+    background-color: #ffffff;
+    border: 5px solid;
+    border-radius: 15px;
+    box-shadow: 50px 50px 0px #a4a4a4, -50px -50px 0px #ffffff;
+
+}
+.container .forms{  
+    padding: 30px;
+
+}
+.container .forms .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+.forms .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    /*background-color: #f44040;*/
+    border-radius: 25px;
+}    
+.forms .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-bottom: 4px solid #ccc;
+    border-top: 4px solid transparent;
+    transition: all 0.4s ease;
+
+
+}
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #0047FF;
+
+}
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+
+
+}
+.input-field input:is(:focus, :valid) ~ i{
+    color: #0047FF;
+}
+.input-field i.icon{
+    left: 0;
+
+}
+.input-field i.showpass{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+.forms .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.checkbox .checkbox__inside{
+    display: flex;
+    align-items: center;
+}
+.checkbox__inside input{
+    margin: 0 8px -2px 4px;
+    accent-color: #0047FF;
+
+}
+.forms .logtext{
+    color: #333;
+    font-size: 13px;
+}
+.forms a.logtext{
+    color: #0047FF;
+    text-decoration: none;
+
+}
+.forms a:hover{
+    text-decoration: underline;
+    
+}
+.forms .button{
+    margin-top: 35px;
+}
+.forms .button input{
+    border: none;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.button input:hover{
+    background-color: #265df2;
+
+}
+.forms .signup{
+    margin-top: 30px;
+    text-align: center;
+}
+@media only screen and (max-width: 2000px ) {
+    .container{
+        position: relative;
+        max-width: 430px;   
+        width: 100%;
+        background-color: #ffffff;
+        border: 5px solid;
+        border-radius: 15px;
+        box-shadow: 50px 50px 0px #666666, -50px -50px 0px #ffffff;
+    
+    }  
+}
+@media only screen and (min-width: 900px ) {
+    .container{
+        position: relative;
+        max-width: 430px;   
+        width: 100%;
+        background-color: #ffffff;
+        border: 5px solid;
+        border-radius: 15px;
+        box-shadow: 50px 50px 0px #666666, -50px -50px 0px #ffffff;
+    
+    } 
+}
